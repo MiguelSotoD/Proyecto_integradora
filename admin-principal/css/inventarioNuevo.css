@@ -1,0 +1,189 @@
+/* EL estilo de la seccion de regresar */
+.fa-arrow-left {
+    margin-top: 1.8rem;
+    margin-left: .9rem;
+}
+
+.div-producto {
+    margin-left: 2rem;
+}
+
+.div-producto-new {
+    background-color: rgb(198, 201, 194);
+    height: 3.7rem;
+    border-radius: 2rem;
+    margin-left: 1.4rem;
+}
+
+.new-producto {
+    display: block;
+    /* background-color: rgb(0, 131, 246); */
+    height: 3.7rem;
+    border-radius: 2rem;
+    margin-top: -.2rem;
+    width: 100%;
+}
+
+hr{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* La seccion de el formulario */
+.section-formulario {
+    /* background-color: aqua; */
+    height: auto;
+}
+
+.login {
+    /* background-color: beige; */
+    width: 90%;
+    height: auto;   
+    margin: 0 auto;
+}
+
+
+.login h1 {
+    text-align: center;
+}
+
+.login-datos {
+    /* background-color: red; */
+    width: 80%;
+    height: 25rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.login-datos input{
+    margin-top: .5rem;
+    background-color: rgb(243, 239, 236);
+    border-style: none;
+    height: 2rem;
+    width: 60%; 
+}
+
+.campos select {
+    margin-top: 0.5rem;
+    background-color: rgb(243, 239, 236);
+    border-style: none;
+    height: 2rem;
+    width: 60%;
+}
+
+.login-datos option{
+    margin-top: .5rem;
+    background-color: rgb(255, 255, 255);
+    border-style: none;
+    height: 2rem;
+    width: 60%; 
+}
+
+.campos {
+    margin: .5rem;
+}
+
+.botones {
+    text-align: center;
+} 
+
+.botones button {
+    border: 2px;
+    background-color: rgba(68, 70, 70, 0.375);
+    height: 2rem;
+    font-size: 1.01rem;
+    border-radius: 3rem;
+    margin-right: .5rem;
+}
+
+.botones button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.botones a {
+    border: 2px;
+    background-color: rgb(68, 70, 70, 0.375);
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 3rem;
+    color: #000;
+    display: inline-block;
+    line-height: 2rem;
+}
+
+.botones a:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.prevPhoto {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    height: 150px;
+    border: 1px solid #CCC;
+    position: relative;
+    cursor: pointer;
+    /* background: url(../images/uploads/user.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+}
+.prevPhoto label{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.prevPhoto img{
+	width: 100%;
+	height: 100%;
+}
+.upimg, .notBlock{
+	display: none !important;
+}
+.errorArchivo{
+	font-size: 16px;
+	font-family: arial;
+	color: #cc0000;
+	text-align: center;
+	font-weight: bold; 
+	margin-top: 10px;
+}
+.delPhoto{
+	color: #FFF;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	background: red;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	z-index: 10;
+}
+#tbl_list_productos img{
+	width: 50px;
+}
+.imgProductoDelete{
+	width: 175px;
+}
+
+.imgRepre {
+    width: 20vh;
+}

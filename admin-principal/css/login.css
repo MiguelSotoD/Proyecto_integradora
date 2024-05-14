@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    box-sizing: border-box;
+    text-transform: none;
+    font-family: sans-serif;
+    background-image: url(../img/login-imprenta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.login-section{
+    /* background-color: red; */
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-top: 100px;
+}
+
+.formulario-login{
+    max-width: 100%;
+    background-color: #fff;
+    /* align-self: center; */
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 1px 1px 2px 2px #46a2fd;
+}
+
+.formulario-login h2{
+    text-align: center;
+    font-size: 3vmax;
+    color: #46a2fd;
+    padding: 20px;
+}
+
+.formulario-login .formulario-tabla{
+   
+    width: auto;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+
+.formulario-login .formulario-tabla td{
+    width: 100%;
+    text-align: center;
+   padding: 20px 0 20px 0;
+}
+
+.formulario-login .formulario-tabla input{
+    max-width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: .5px solid;
+    border-radius: 10px;
+    font-size: 17px;
+    outline: none;
+    margin: 0 auto;
+}
+
+ input[type="text"]:hover,input[type="password"]:hover{
+    background-color: aliceblue;
+}
+
+form [type="submit"] {
+    border: none;
+    font-size: 15px;
+    background: #46a2fd;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+}
+
+form [type="submit"]:hover {
+    border: none;
+    font-size: 15px;
+    background-color: rgb(130, 189, 237);
+    color: #000000;
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+form [type="submit"]::before{
+    background-color: rgb(90, 94, 97);
+}
+
+/* Agregar  estilos responsivos */
+@media (max-width: 767px) {
+    .login-section{
+        margin-top: 100px;
+    }
+    .formulario-login{
+        width: auto;
+        margin: 0 auto;
+        padding: 2px;
+    }
+}

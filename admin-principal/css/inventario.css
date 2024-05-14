@@ -1,0 +1,270 @@
+/* Barra del menu */
+
+
+.fa-solid {
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: .6rem;
+}
+
+/* Estilos de la "section-navegador" */
+
+/* Estilos para el boton de agregar producto */
+.section-navegador {
+    height: auto;
+}
+
+.div-producto {
+    margin-left: 2rem;
+}
+
+.div-producto-new {
+    background-color: rgb(198, 201, 194);
+    height: 3.7rem;
+    border-radius: 2rem;
+    margin-left: 1.4rem;
+}
+
+.new-producto {
+    display: block;
+    /* background-color: rgb(0, 131, 246); */
+    height: 3.7rem;
+    border-radius: 2rem;
+    margin-top: -.2rem;
+}
+
+.fa-plus {
+    margin-top: 1.8rem;
+    margin-left: .9rem;
+}
+
+.new-producto-p {
+    display: flex;
+    margin-top: 4rem;
+    color: #000000;
+    display: block;
+    width: 7.3rem;
+}
+
+/* Estilos para el buscador */
+
+.div-navegador {
+    height: 7rem;
+}
+
+.div-navegador-btn {
+    background-color: rgb(159, 160, 161);
+    height: 3rem;
+    width: 45rem;
+    margin-left: 7rem;
+}
+
+#btn-busqueda {
+    height: 2rem;
+    width: 40rem;
+    margin-left: 2.5rem;
+    margin-top: .5rem;
+}
+
+.btn {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    float: right;
+    margin-bottom: 15rem;
+    margin-right: .5rem;
+}
+
+#separador {
+    width: 95%;
+    height: .1rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #000000;
+}
+
+/* Seccion cuando no hay productos en existencia */
+.secton-productos {
+    background-color: antiquewhite;
+}
+
+.fa-file-excel {
+    text-align: center;
+    font-size: 12rem;
+}
+
+.ancho {
+    font-size: 10vmax;
+    line-height: 12rem;
+    vertical-align: -0.1875em;
+}
+
+.file-empty p{
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+button.btn.btn-sm.btn-outline-success {
+    margin: 0;
+    width: -webkit-fill-available;
+}
+/* Pantalla de escritorio  GRANDE  LARGE >=992px AND <=1199 */
+@media(min-width:992px) and (max-width:1199px){
+
+    .new-producto {
+        display: block;
+        /* background-color: rgb(0, 131, 246); */
+        height: 3.7rem;
+        border-radius: 2rem;
+        margin-top: -.2rem;
+        width: 3rem;
+    }
+
+    .div-producto-new {
+        width: 3.26rem;
+    }
+}
+/* Pantalla de escritorio  MEDIANA  MEDIUM >=768px AND <=991  TABLET */
+@media(min-width:768px) and (max-width:991px)
+{
+    .new-producto {
+        display: block;
+        /* background-color: rgb(0, 131, 246); */
+        height: 3.7rem;
+        border-radius: 2rem;
+        margin-top: -.2rem;
+        width: 3rem;
+    }
+
+    .div-producto-new {
+        width: 3.26rem;
+    }
+
+    .fa-plus {
+        margin-top: 1.8rem;
+        margin-left: .8rem;
+    }
+
+    .div-navegador-btn {
+        background-color: rgb(159, 160, 161);
+        height: 3rem;
+        width: 30rem;
+        margin-left: 1rem;
+    }
+
+    #btn-busqueda {
+        height: 2rem;
+        width: 25rem;
+        margin-left: 1.5rem;
+        margin-top: .5rem;
+        /* position: relative; */
+    } 
+
+    .div-navegador {
+        /* background-color: red; */
+        height: 7rem;
+        /* margin-left: 3rem; */
+    }
+
+    .footer {
+        margin-top: 3.2rem;
+    }
+}
+/* Pantalla de escritorio  PEQUEÑA  SMALL >=576px AND <=767 CEL */
+@media(min-width:576px) and (max-width:767px)
+{
+    .new-producto {
+        display: block;
+        /* background-color: rgb(0, 131, 246); */
+        height: 3.7rem;
+        border-radius: 2rem;
+        margin-top: -.2rem;
+        width: 3rem;
+    }
+
+    .div-producto-new {
+        width: 4.26rem;
+    }
+
+    .fa-plus {
+        margin-top: 2rem;
+        margin-left: 1.35rem;
+    }
+
+    .div-navegador-btn {
+        background-color: rgb(159, 160, 161);
+        height: 3rem;
+        width: 25rem;
+        margin-left: 1rem;
+    }
+
+    #btn-busqueda {
+        height: 2rem;
+        width: 20rem;
+        margin-left: 1.5rem;
+        margin-top: .5rem;
+    } 
+
+    .div-navegador {
+        height: 7rem;
+        margin-left: 2rem;
+    }
+}
+/* Pantalla de escritorio  EXTRA PEQUEÑA  EXTRA SMALL <576px   CEL */
+@media(max-width:575px)
+{
+    .div-producto {
+        height: 1rem;
+    }
+
+    .new-producto {
+        display: flex;
+        /* background-color: rgb(0, 131, 246); */
+        height: 3.7rem;
+        border-radius: 2rem;
+        margin-top: -.2rem;
+        width: 3rem;
+    }
+
+    .div-producto-new {
+        width: 4rem;
+        top: 42rem;
+        right: 1rem;
+        display: flex;
+        position: fixed;
+    }
+
+    .fa-plus {
+        margin-top: 1.8rem;
+        margin-left: 1rem;
+    }
+
+    .div-navegador-btn {
+        background-color: rgb(159, 160, 161);
+        height: 3rem;
+        width: 25rem;
+        margin-left: 1rem;
+        margin-top: 0;
+    }
+
+    #btn-busqueda {
+        height: 2rem;
+        width: 20rem;
+        margin-left: 1.5rem;
+        margin-top: .5rem;
+    } 
+
+    .div-navegador {
+        height: 7rem;
+        margin-left: 2rem;
+    }
+
+    .new-producto-p {
+       opacity: 0;
+       display: block;
+    }
+
+    .file-empty p {
+        margin-bottom: 10rem;
+    }
+}

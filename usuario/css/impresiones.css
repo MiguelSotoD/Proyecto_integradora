@@ -1,0 +1,324 @@
+/* seccion 1 */
+
+.seccion1{
+	margin-top: 60px;
+}
+.seccion1 article{
+	justify-content: center;
+	text-align: center;
+}
+.seccion1 article h1{
+	font-size: 34px;
+	padding: 20px;
+}
+.seccion1 article p{
+color: #f10909;
+}
+.imagen-total{
+	width: 100%;
+	height: 600px;
+	margin-bottom: 40px;
+}
+
+.article2 img{
+	width: 100%;
+	height: 400px;
+	margin-top: 100px;
+}
+/* creacion de la imagen-text */
+	  	
+	  .index-contenedor-card {
+		position: relative;
+		width: 90%;
+		height: 400px;
+		margin-left: auto;
+		margin-right: auto; 
+		/* margin: 20px; */
+		overflow: hidden;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		transition: transform 0.3s;
+	  }
+	  
+	  .index-contenedor-card img {
+		width: 100%;
+		height: 100%;
+		/* object-fit: cover; */
+		transition: opacity 0.3s;
+	  }
+	  
+	  .index-contenedor-card:hover {
+		transform: scale(1.01);
+	  }
+	  
+	  .index-contenedor-card:hover img {
+		opacity: 0.8;
+	  }
+	  
+	  .index-contenedor-card .index-contenedor-card-intro {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 20px;
+		background-color: rgba(0, 0, 0, 0.8);
+		color: #fff;
+		width: 100%;
+		transform: translateY(100%);
+		transition: transform 0.3s;
+	  }
+	  
+	  .index-contenedor-card:hover .index-contenedor-card-intro {
+		transform: translateY(0);
+	  }
+	  
+	  .index-contenedor-card h1 {
+		font-size: 24px;
+		margin-bottom: 10px;
+	  }
+	  
+	  .index-contenedor-card p {
+		font-size: 14px;
+		line-height: 1.4;
+	  }
+	
+/* seccion 2 */
+
+.imagenes-fila{
+	transition: transform 0.3s; 
+}
+.imagenes-fila:hover{
+	transform: scale(1.02); 
+}
+.imagenes-fila img{
+	width: 100%;
+	height: auto;
+    transition: opacity 0.2s;
+} 
+
+
+/* seccion 3 */
+/* .seccion3 p{
+	text-align: center;
+}
+
+
+
+
+
+
+  /* Header responsivo
+
+  @media only screen and (max-width: 768px) {
+	.header-style {
+		height: 195px;
+		padding: 20px;
+		flex-direction: column;
+	}
+
+	.navegacion ul {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.navegacion ul li {
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+
+	.navegacion ul li a::before {
+		width: 100%;
+	}
+}
+
+.flex-box{
+	display: block;
+}
+
+.seccion_imp1 img{
+	width: 700px;
+} */
+
+
+
+/* Pantalla de escritorio EXTRA GRANDE EXTRA LARGE >=1200px */
+@media(min-width:1200px)
+{
+	 .col-xl-12{width: 100%;}
+	 .col-xl-11{width: 91.666666%;}
+	 .col-xl-10{width: 83.333333%;}
+	 .col-xl-9{width: 75%;}
+	 .col-xl-8{width: 66.666666%;}
+	 .col-xl-7{width: 58.333333%;}
+	 .col-xl-6{width: 50%;}
+	 .col-xl-5{width: 41.666666%;}
+	 .col-xl-4{width: 33.333333%;}
+	 .col-xl-3{width: 25%;}
+	 .col-xl-2{width: 16.666666%;}
+	 .col-xl-1{width: 8.333333%;}
+}
+/* Pantalla de escritorio  GRANDE  LARGE >=992px AND <=1199 */
+@media(min-width:992px) and (max-width:1199px)
+{
+	 .col-lg-12{width: 100%;}
+	 .col-lg-11{width: 91.666666%;}
+	 .col-lg-10{width: 83.333333%;}
+	 .col-lg-9{width: 75%;}
+	 .col-lg-8{width: 66.666666%;}
+	 .col-lg-7{width: 58.333333%;}
+	 .col-lg-6{width: 50%;}
+	 .col-lg-5{width: 41.666666%;}
+	 .col-lg-4{width: 33.333333%;}
+	 .col-lg-3{width: 25%;}
+	 .col-lg-2{width: 16.666666%;}
+	 .col-lg-1{width: 8.333333%;}
+}
+/* Pantalla de escritorio  MEDIANA  MEDIUM >=768px AND <=991  TABLET */
+@media(min-width:768px) and (max-width:991px)
+{
+	 .col-md-12{width: 100%;}
+	 .col-md-11{width: 91.666666%;}
+	 .col-md-10{width: 83.333333%;}
+	 .col-md-9{width: 75%;}
+	 .col-md-8{width: 66.666666%;}
+	 .col-md-7{width: 58.333333%;}
+	 .col-md-6{width: 50%;}
+	 .col-md-5{width: 41.666666%;}
+	 .col-md-4{width: 33.333333%;}
+	 .col-md-3{width: 25%;}
+	 .col-md-2{width: 16.666666%;}
+	 .col-md-1{width: 8.333333%;}
+}
+/* Pantalla de escritorio  PEQUEÑA  SMALL >=576px AND <=767 CEL */
+@media(min-width:576px) and (max-width:767px)
+{
+	.article2 img{
+		width: 100%;
+		height: 400px;
+		margin-top: 0px;
+	}
+	.seccion1 article h1{
+		font-size: 29px;
+		padding: 20px;
+	}
+	.seccion1 article p{
+	color: #f10909;
+	font-size: 10px;
+	}
+	
+	.index-contenedor-card h1 {
+		font-size: 10px;
+		text-align: center;
+	  }
+	  
+	  .index-contenedor-card p {
+		font-size: 19px;
+		line-height: 1.4;
+	  }
+
+	.index-contenedor-card {
+		height: 300px;
+	  }
+
+
+	.seccion3 p{
+		font-size: 10px;
+	}
+	
+	 .col-sm-12{width: 100%;}
+	 .col-sm-11{width: 91.666666%;}
+	 .col-sm-10{width: 83.333333%;}
+	 .col-sm-9{width: 75%;}
+	 .col-sm-8{width: 66.666666%;}
+	 .col-sm-7{width: 58.333333%;}
+	 .col-sm-6{width: 50%;}
+	 .col-sm-5{width: 41.666666%;}
+	 .col-sm-4{width: 33.333333%;}
+	 .col-sm-3{width: 25%;}
+	 .col-sm-2{width: 16.666666%;}
+	 .col-sm-1{width: 8.333333%;}
+}
+/* Pantalla de escritorio  EXTRA PEQUEÑA  EXTRA SMALL <576px   CEL */
+@media(max-width:575px)
+{
+	.article2 img{
+		width: 100%;
+		height: 400px;
+		margin-top: 0px;
+	}
+	.seccion1 article h1{
+		font-size: 29px;
+		padding: 20px;
+	}
+	.seccion1 article p{
+	color: #f10909;
+	font-size: 10px;
+	}
+	
+	.index-contenedor-card h1 {
+		font-size: 10px;
+		text-align: center;
+	  }
+	  
+	  .index-contenedor-card p {
+		font-size: 19px;
+		line-height: 1.4;
+	  }
+
+	.index-contenedor-card {
+		height: 300px;
+	  }
+
+	.seccion3 p{
+		font-size: 10px;
+	}
+	
+	 .col-12{width: 100%;}
+	 .col-11{width: 91.666666%;}
+	 .col-10{width: 83.333333%;}
+	 .col-9{width: 75%;}
+	 .col-8{width: 66.666666%;}
+	 .col-7{width: 58.333333%;}
+	 .col-6{width: 50%;}
+	 .col-5{width: 41.666666%;}
+	 .col-4{width: 33.333333%;}
+	 .col-3{width: 25%;}
+	 .col-2{width: 16.666666%;}
+	 .col-1{width: 8.333333%;}
+	 .col-0{display: none;}
+}
+
+
+/* Boton whats  */
+.boton-flotante{
+	position: sticky;
+	float: right;
+	bottom: 20px;
+	right: 10px;
+	 }
+ .whatsapp a{
+        display: block;
+        text-decoration: none;
+        background: #179c1e;
+        color: #fff;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+        transition: all 500ms ease;
+    }
+.whatsapp a:hover{
+    background: #fff;
+	color: #179c1e;
+}
+.whatsapp a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+.whatsapp a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}

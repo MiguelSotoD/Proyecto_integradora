@@ -1,0 +1,49 @@
+.seccion1{
+    text-align: center;
+    /* margin-top: 15px; */
+}
+
+.article1 img{
+    width: 20rem;
+    height: 20rem;
+}
+.article1 h1{
+    font-size: 3rem;
+    font-family: 'Inter', sans-serif;
+}
+.article1 h2{
+    font-size: 2rem;
+    margin-top: 15px;
+    font-family: 'Inter', sans-serif;
+}
+.article1 h3{
+    font-size: 2rem;
+    margin-top: 80px;
+    font-family: 'Inter', sans-serif;
+}
+form{
+    margin-top: 4.5rem;
+}
+form h1{
+    font-size: 3rem;
+    font-family: 'Inter', sans-serif;
+}
+form label{
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+form input{
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+form a{
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    /* cursor: pointer; */
+}
+
+

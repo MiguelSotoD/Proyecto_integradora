@@ -1,0 +1,380 @@
+.encuadernado-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/index-imagen3.jpg); /*Dar un fondo de imagen con una sombra obsura a la imagen*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    user-select: none;
+}
+.encuadernado-img h1{
+    color: white;
+    font-size: 4vmax;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.encuadernado-img p{
+    color: white;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Seccion 1 */
+.encuadernado-section1{
+    margin-top: 20px;
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.encuadernado-section1-div{
+    /* background-color: pink; */
+    max-width:50%;
+    height: 400px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.encuadernado-section1-div img{
+    width:90%;
+    height: 90%;
+    object-fit: cover;
+    opacity: 1;
+}
+.encuadernado-section1-texto{
+    /* background-color: #179c1e; */
+    width: 80%;
+    height: 50px;
+    margin-top: -2px;
+    margin-left: 50px;
+    z-index: 10;
+    text-align: left;
+    line-height: 50px;
+    padding-left: 30px;
+    box-shadow: 3px 3px 10px black;
+}
+.encuadernado-section1-texto h1{
+    font-size: 2.5vmax;
+}
+
+
+
+/* Seccion de diferencias */
+.encuadernado-section2{
+    margin-top: 100px;
+    width: 100%;
+    /* background-color: violet; */
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    /* gap: 2%; */
+    border: 1px solid black ;
+}
+
+.encuadernado-section2-titulo{
+    width: 14%;
+    font-size: 2vmax;
+    /* background-color: yellow; */
+
+}
+
+.encuadernado-section2-texto{
+    width: 50%;
+    height: auto;
+    /* background-color: turquoise; */
+    font-size: 1.5vmax;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.encuadernado-section2-imagen{
+    /* background-color: blue; */
+    width: 35%;
+}
+.encuadernado-section2-imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Seccion de pedido */
+
+.encuadernado-content{
+    vertical-align: baseline;
+    height: 300px;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.enc-2{
+    padding: 30px;
+    background-color: whitesmoke;
+    backdrop-filter: blur(100px);
+}
+
+.encuadernado-content-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center
+}
+
+.encuadernado-content-box-container{
+    height: auto;
+    width: 17rem;
+    background-color: #370f72;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3 5rem rgba(0,0,0,.5);
+    margin: 2rem;
+    
+}
+.encuadernado-content-box-container p{
+    margin-top: 10px;
+}
+.encuadernado-content-box-container a{
+    color: red;
+}
+.encuadernado-content-box-container img{
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+/* Boton whats  */
+.boton-flotante{
+	position: sticky;
+	float: right;
+	bottom: 20px;
+	right: 10px;
+	 }
+ .whatsapp a{
+        display: block;
+        text-decoration: none;
+        background: #179c1e;
+        color: #fff;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+        transition: all 500ms ease;
+    }
+.whatsapp a:hover{
+    background: #fff;
+	color: #179c1e;
+}
+.whatsapp a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+.whatsapp a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Responsivo Media Query */
+
+    /* Pantalla de escritorio EXTRA GRANDE EXTRA LARGE >=1200px */
+    @media(min-width:1200px)
+    {
+        
+    }
+    /* Pantalla de escritorio  GRANDE  LARGE >=992px AND <=1199 */
+    @media(min-width:992px) and (max-width:1199px)
+    {
+        .encuadernado-section1-div{
+            /* background-color: pink; */
+            max-width:50%;
+        }
+    
+        .encuadernado-section1-texto{
+            /* background-color: #179c1e; */
+            width: 80%;
+        }
+    }
+    /* Pantalla de escritorio  MEDIANA  MEDIUM >=768px AND <=991  TABLET */
+    @media(min-width:768px) and (max-width:991px)
+    {
+        
+            /* Seccion 1 */
+   
+
+    .encuadernado-section1-div{
+        /* background-color: pink; */
+        max-width:50%;
+    }
+
+    .encuadernado-section1-texto{
+        /* background-color: #179c1e; */
+        width: 80%;
+    }
+    
+
+        /* Seccion de diferencias */
+        .encuadernado-section2{
+            height: auto;
+            display: block;
+            margin-bottom: 100px;
+            text-align: center;
+        }
+        
+        .encuadernado-section2-titulo{
+            width: 100%;
+            background-color: yellow;
+        }
+        
+        .encuadernado-section2-texto{
+            width: 100%;
+            height: auto;
+            font-size: 1.5vmax;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .encuadernado-section2-imagen{
+            width: 100%;
+        }
+        
+        /* Seccion de pedido */
+        
+        .encuadernado-content{
+            height: auto;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+    /* Pantalla de escritorio  PEQUEÑA  SMALL >=576px AND <=767 CEL */
+    @media(min-width:576px) and (max-width:767px)
+    {
+        /* Seccion 1 */
+        .encuadernado-section1{
+            width: 100%;
+            height: 800px;
+            display: block;
+            align-items: center;
+        }
+        
+        .encuadernado-section1-div{
+            max-width:100%;
+            margin: 30px auto;
+        }
+        
+        .encuadernado-section1-texto{
+            /* background-color: #179c1e; */
+            width: 80%;
+            height: 50px;
+        }
+    
+        /* Seccion de diferencias */
+        .encuadernado-section2{
+            height: auto;
+            display: block;
+            margin-bottom: 100px;
+            text-align: center;
+        }
+        
+        .encuadernado-section2-titulo{
+            width: 100%;
+            background-color: yellow;
+        }
+        
+        .encuadernado-section2-texto{
+            width: 100%;
+            height: auto;
+            font-size: 1.5vmax;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .encuadernado-section2-imagen{
+            width: 100%;
+        }
+        
+        /* Seccion de pedido */
+        
+        .encuadernado-content{
+            height: auto;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+    /* Pantalla de escritorio  EXTRA PEQUEÑA  EXTRA SMALL <576px   CEL */
+    @media(max-width:575px)
+    {
+        /* Seccion 1 */
+        .encuadernado-section1{
+            width: 100%;
+            height: 800px;
+            display: block;
+            align-items: center;
+        }
+        
+        .encuadernado-section1-div{
+            max-width:100%;
+            margin: 30px auto;
+        }
+        
+        .encuadernado-section1-texto{
+            /* background-color: #179c1e; */
+            width: 80%;
+            height: 50px;
+        }
+    
+        /* Seccion de diferencias */
+        .encuadernado-section2{
+            height: auto;
+            display: block;
+            margin-bottom: 100px;
+            text-align: center;
+        }
+        
+        .encuadernado-section2-titulo{
+            width: 100%;
+            background-color: yellow;
+        }
+        
+        .encuadernado-section2-texto{
+            width: 100%;
+            height: auto;
+            font-size: 1.5vmax;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .encuadernado-section2-imagen{
+            width: 100%;
+        }
+        
+        /* Seccion de pedido */
+        
+        .encuadernado-content{
+            height: auto;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        
+        
+    }

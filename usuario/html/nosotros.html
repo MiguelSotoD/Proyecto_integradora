@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El profe</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/nosotros.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+    <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="stylesheet" href="../css/burbujas.css">
+
+    <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css"> 
+
+
+    <script>
+        function toggleFormulario() {
+            var formulario = document.getElementById('formulario');
+            formulario.classList.toggle('activo');
+        }
+    </script>
+</head>
+<body>
+
+    <header class="header-style">
+
+        <input type="checkbox" id="btn-menu">
+
+        <label for="btn-menu"><img src="../img/menu-despegar.png" alt="menu" >
+        </label>
+
+        <a href="../../index.html" class="header-logo"> <img src="../../admin-principal/img/2.png"></a>
+
+        <nav class="navegacion">
+            <ul class="menu">
+                <li>
+                    <a href="../../index.html">INICIO</a>
+                </li>                
+                <li>
+                    <a href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="servicios.html">SERVICIOS</a>
+                    <ul class="submenu">
+                        <li><a href="encuadernado.html">Encuadernado</a></li>
+                        <li><a href="serigrafia.html">Serigrafia</a></li>
+                        <li><a href="sublimado.html">Sublimado</a></li>
+                        <li><a href="impresiones.html">Impresiones</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../admin-principal/index.php" class="admin">ACCEDER</a>
+                </li>
+            </ul>
+            <ion-icon name="header-icon"></ion-icon>
+        </nav>
+    </header>
+
+
+    <center>
+        <div class="carrusel">
+            <div class="carrusel-slides">
+                <img src="../img/index-imagen5.jpg" alt="Imagen">
+                <img src="../img/index-imagen6.jpg" alt="Imagen">
+                <img src="../img/index-imagen7.jpg" alt="Imagen">
+                <img src="../img/index-imagen10.png" alt="Imagen">
+            </div>
+        </div>
+    </center> 
+
+<div class="container">
+    <div id="sobre-nosotros">
+        <br>
+        <h2>Sobre Nosotros</h2>
+        <hr>
+       
+       <br>
+        <p>Lo que hace a El Profe destacar de la competencia es su enfoque personalizado y su atención al detalle. Cada cliente es tratado de manera individualizada, comprendiendo sus necesidades y objetivos para ofrecer soluciones a medida que cumplan con sus expectativas.</p>
+        
+        <hr>
+    </div>               
+    <div class="caja-grande col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="image-box col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <img src="../img/index-imagen10.png" alt="Imagen 1">
+            <p>Texto de la imagen 1</p>
+        </div>
+        <div class="image-box col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <img src="../img/index-imagen11.jpg" alt="Imagen 2">
+            <p>Texto de la imagen 2</p>
+        </div>
+        <div class="image-box col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <img src="../img/index-imagen9.jfif" alt="Imagen 3">
+            <p>Texto de la imagen 3</p>
+        </div>
+    
+</div>
+
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.0707763898986!2d-104.6672444!3d24.0285692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bc823a1dfd673%3A0xc80253fec9c307bb!2sCalle%20Gral.%20Esteban%20Coronado%20203%2C%20Zona%20Centro%2C%2034000%20Durango%2C%20Dgo.!5e0!3m2!1ses-419!2smx!4v1688100805884!5m2!1ses-419!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+<!-- Formulario de registro -->
+<!-- <div id="formulario" class="formulario">
+    <h3>Contactanos</h3> <br>
+    <form method="post">
+        <table align="center">
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" required><br><br></td>
+        </tr>
+        
+        <tr>
+            <td> <label for="texto">Escribenos:</label><br></td>
+            <td> <textarea name="" id="" cols="30" rows="10"></textarea><br></td>
+        </tr>
+        
+       <tr>
+        <td> <input type="submit" value="Enviar"></td>
+       </tr>
+    </table>  
+       
+    </form>
+</div> -->
+
+   <!-- Boton flotante whatsapp -->
+        
+   <div class="callbutton">
+    <div id="WAButton"></div>
+</div>
+
+
+    <!-- footer de la pagina -->
+    <footer class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 footer">
+
+        <!-- Logo de la empresa -->
+        <a href="#"><img src="../../admin-principal/img/2.png" width="100px" height="100px" alt="No se encontro la imagen"></a>
+
+        <!-- Secciones del footer -->
+        <div class="div-infofinal">
+            <!-- Primer seccion Acerca de Nosotros -->
+            <div class="div-infofinal1">
+            <ul>
+                <li class="azul">
+                    <p>Acerca de Nosotros</p>
+                </li>
+
+                <li>
+                <a href="nosotros.html">Acerca de Nosotros</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">+52 6181225476</a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/maps/UvbLh5k2jrTfeSDPA" target="_blank">Calle Coronado #203 Col Zona Centro Durango,Dgo,Mex.</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- Segunda seccion de Servicios-->
+        <div class="div-infofinal1">
+
+        
+            <ul>
+                <li class="azul">
+                <a href="servicios.html"><p>Servicios</p></a> 
+                </li>
+                <li>
+                <a href="encuadernado.html">Encuadernado</a>
+                </li>
+
+                <li>
+                <a href="serigrafia.html">Serigrafia</a>
+                </li>
+
+                <li>
+                <a href="sublimado.html">Sublimado</a>
+                </li>
+
+                <li>
+                <a href="impresiones.html"> Impresiones</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Tercera seccion de Informacion -->
+        <div class="div-infofinal1">
+            <ul>
+                <li class="azul">
+                <p>Información</p>
+                </li>
+
+            
+                <li>
+                    <a href="#">Politicas de privacidad</a>
+                </li>
+                <li>
+                    <a href="#">Informacion legal</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </footer>
+
+    <!--  -->
+    <section class="section-footer-links">
+        <div class="section-div-redes-links col-12">
+            <a href="https://www.facebook.com/"><img src="../img/facebook.png"></a>
+            <a href=""><img src="../img/gmail.png"></a>
+            <a href=""><img src="../img/instagram.png" ></a>
+        </div>
+
+    </section>
+
+
+
+</body>
+</html>
+
+<!-- Codigo para la fuente de la burbuja de phone -->
+<script src="https://kit.fontawesome.com/ab4fa16bfb.js" crossorigin="anonymous"></script>
+<!-- Codigo para que funcione la burbuja de Whatsapp -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+<script src="../js/burbujas.js"></script>

@@ -1,0 +1,137 @@
+#separador {
+    width: 95%;
+    height: .1rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #000000;
+    top: 10rem;
+}
+
+/* Aqui viene el diseño de los banners de los productos */
+.banner-producto {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Apartado del menu */
+.aside-derecho {
+    grid-area: aside-derecho;
+    margin: 0.7rem;
+}
+
+.menu-producto {
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu-desplegable {
+    list-style: none;
+}
+
+.menu-desplegable a {
+    display: block;
+    position: absolute;
+}
+
+.menu-desplegable a {
+    position: absolute;
+    background-color: cadetblue;
+    width: 70rem;
+    height: 10rem;
+    margin-top: 10%;
+    transition: all 0.5s;
+}
+
+/* Apartado del aside izquiero donde inclute la imagen */
+.aside-izquierdo {
+    grid-area: aside-izquierdo;
+    padding: 1rem;
+    margin: .2rem 0 0 0;
+}
+
+.img-producto {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.img-producto img {
+    width: auto;
+    height: 8vh;
+}
+
+/* Apartado del aside central donde incluye la informacion */
+.aside-central {
+    grid-area: aside-central;
+    padding: .5rem;
+}
+
+.titulo {
+    margin-bottom: .2rem;
+}
+
+.cantidad {
+    margin: 0.5rem 0 0.5rem 0
+}
+
+.producto-listo {
+    -webkit-box-shadow: 0px 0px 23px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 23px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 23px -4px rgba(0, 0, 0, 0.75);
+    border: 2px solid black;
+}
+
+.producto {
+    display: grid;
+    grid-template-areas:
+        "aside-izquierdo aside-central aside-derecho";
+    grid-template-columns: 2.5fr 7fr .5fr;
+    grid-gap: 1px;
+}
+
+@media(min-width:1200px)
+{
+    .shadow-sm img{
+        width: 70%;
+        height: 35vh;
+        margin: 0 auto;
+    }
+}
+/* Pantalla de escritorio  GRANDE  LARGE >=992px AND <=1199 */
+@media(min-width:992px) and (max-width:1199px)
+{
+    .shadow-sm img{
+        width: 70%;
+        height: 30vh;
+        margin: 0 auto;
+    }
+}
+/* Pantalla de escritorio  MEDIANA  MEDIUM >=768px AND <=991  TABLET */
+@media(min-width:768px) and (max-width:991px)
+{
+    .shadow-sm img{
+        width: 100%;
+        height: 20vh;
+        margin: 0 auto;
+    }
+}
+/* Pantalla de escritorio  PEQUEÑA  SMALL >=576px AND <=767 CEL */
+@media(min-width:576px) and (max-width:767px)
+{
+    .shadow-sm img{
+        width: 100%;
+        height: 30vh;
+        margin: 0 auto;
+    }
+}
+/* Pantalla de escritorio  EXTRA PEQUEÑA  EXTRA SMALL <576px   CEL */
+@media(max-width:575px)
+{
+    .shadow-sm img{
+        width: 100%;
+        height: 50vh;
+        margin: 0 auto;
+    }
+}
+
+ 

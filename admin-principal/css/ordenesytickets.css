@@ -1,0 +1,442 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #f1f4f7;
+    }
+
+    h1,h2,p{
+        color: black;
+    }
+    .a-all{
+            text-decoration: none;
+            color: black;
+       
+    }
+    /* DISEÑO PARA ARCHIVO ORDENES.PHP */
+    /* Diseño parte superior Ingresar,Barra de Busqueda */
+    .ordenes1{
+        /* background-color: blue; */
+        width: 100%;
+        display: flex;
+        margin: 1rem auto;
+        height: auto;
+        border-bottom: .1px solid rgb(198, 196, 196);
+    }
+    /* Diseño Boton de Ingresar */
+        /* Contenedor */
+    .ordenes-ingresar{
+        width: 15%;
+        /* background-color: aqua; */
+        text-align: center;
+        padding: 0 auto;
+       
+    }
+    /* .ordenes-ingresar a{
+        line-height: 50px;
+        border-radius: 50%;
+        border: 15px solid #b9babc;
+        background-color:#b9babc;
+        color: #000;
+    } */
+
+    .ordenes-ingresar p{
+        font-size: 1.2vmax;
+    }
+
+    .icon-agregar{
+        font-size: 1.6vmax;
+    }
+    
+    /* Diseño Barra de Busqueda */
+        /*Contenedor  */
+    .ordenes-container{
+        
+        width: 70%;
+        margin: 1rem auto;
+    }
+    .ordenes-container-busqueda{
+        width: 100%;
+        background-color: #2f3648;
+        border-radius: 8px;
+        position: relative;
+        color: #ffffff;
+        box-shadow: 2px 1px 5px 3px rgb(0, 0, 0,.50);
+    }
+        /* Inputt de busqueda */
+    .ordenes-container-busqueda input{
+        width: 100%;
+        height: 50px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        padding: 0 52px 0 20px;
+        font-size: 1.5vmax;
+    }
+        /* Icono de buscar */
+    .icon-search{
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 22px;
+        cursor: pointer;
+        color: black;
+    }
+
+   
+
+        /* Aqui viene el diseño de los banners de los productos */
+    .banner-producto {
+        display: flex;
+        flex-direction: column;
+        /* background-color: aqua; */
+    }
+
+
+    /* Apartado del menu */
+    .aside-derecho {
+        grid-area: aside-derecho;
+        margin: 0rem;
+        /* background-color: yellowgreen; */
+    }
+
+    input[id="boton-menu"]{
+        display: none;
+    }
+
+    .menu-modificaciones label {
+        cursor: pointer;
+    }
+
+    .menu-modificaciones label img{
+        width: 40px;
+        height: 40px;
+    }
+    .menu-opciones{
+        background-color: #726b6b;
+        margin-top: -100px;
+    }
+    .menu-opciones{
+    display: none;
+    }
+    .menu-opciones li{
+        padding: 5px;
+    }
+    .menu-opciones a{
+        color: #fff;
+    
+    }
+    input[id="boton-menu"]:checked ~ .menu-modificaciones{
+        position: absolute;
+        /* margin-left: 0; */
+    }
+    input[id="boton-menu"]:checked ~ .menu-opciones{
+        display: block;
+        /* margin-top: -100px; */
+    }
+    .menu-opciones li:hover{
+        background-color: #b9babc;
+    }
+
+/* Apartado del aside izquiero donde inclute la imagen */
+
+/* Apartado del aside central donde incluye la informacion */
+.aside-central {
+    width: 100%;
+    padding: 0rem;
+    /* background-color: tomato; */
+}
+
+.titulo {
+    text-align: center;
+    color: black;
+}
+
+.cantidad {
+    margin: 0.5rem 0 0.5rem 0;
+    text-decoration: none;
+    color: black;
+}
+
+.producto-listo {
+    -webkit-box-shadow: 0px 0px 23px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 23px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 23px -4px rgba(0, 0, 0, 0.75);
+    border: 2px solid black;
+}
+
+.producto {
+    display: grid;
+    grid-template-areas:
+        "aside-izquierdo aside-central aside-derecho";
+    grid-template-columns: 10fr .5fr;
+    grid-gap: 0px;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DISEÑO A PAGINA NUEVAORDEN.PHP */
+    /* Boton de Regresar */
+    .icon-angle-circled-left{
+        font-size: 50px;
+        color: #726b6b;
+    }
+    /* .agregar-nuevo{
+        display: inline;
+    } */
+    /*  */
+    .nuevaOrden-Ingresar{
+        max-width: 100%;
+        
+        /* background-color: salmon; */
+        height: auto;
+    }
+
+    .nuevaOrden-Ingresar-datos{
+        max-width: 40%;
+        margin: 1px auto;
+    }
+    .nuevaOrden-Ingresar form{
+        /* background-color: yellowgreen; */
+        margin: 1px auto;
+        display: inline;
+        display: block;
+    }
+    .nuevaOrden-Ingresar-datos h2{
+        text-align: center;
+        padding-bottom: 5px;
+        font-size: 3vmin;
+    }
+
+    .nuevaOrden-Ingresar label{
+        /* background-color: violet; */
+        display: block;
+        text-align: center;
+        font-size: 2vmin;
+        padding: 10px;
+        font-family: 'Varela Round', sans-serif;
+    }
+    .nuevaOrden-Ingresar input[type="text"], input[type="number"],input[type="date"],input[type="email"]{
+        width: 95%;
+        height: 20px;
+        padding: 0px 0px 0px 10px;
+        font-size: 1.4vmax;
+         margin-top: .5rem;
+        background-color: rgb(255, 255, 255);
+       border: none;
+        height: 2rem;
+        overflow: none;
+        border-bottom: 1.5px solid grey  ;
+       
+    
+    }
+
+    .nuevaOrden-Ingresar input[type="text"]:focus, input[type="number"]:focus,input[type="date"]:focus,input[type="email"]:focus{
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(231, 234, 239);
+    }
+    .nuevaOrden-Ingresar-productos{
+        /* background-color: yellow; */
+        max-width: 30%;
+        margin: 20px;
+        
+    }
+
+    .nuevaOrden-Ingresar-productos input[type="number"],select{
+        width: 95%;
+        background: #fff;
+        font-size: 1.2vmax;
+        height: 100%;
+        border: 1px solid;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .nuevaOrden-Ingresar-productos td,tr{
+        /* border: 1px solid; */
+        width: 5%;
+        padding: 10px;
+    }
+    .agg-prod{
+        background-color:  #f1f4f7;
+        border: none;
+    }
+    .agg-prod i{
+        color: blue;
+    }
+
+    .nuevaOrden-Ingresar-botones{
+        float: right;
+        width: auto;
+    }
+    .nuevaOrden-Ingresar-botones input[type="submit"], input[type="reset"]{
+        width: 100px;
+        height: 30px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .nuevaOrden-Ingresar-botones input[type="submit"]{
+        background-color: yellowgreen;
+        
+        color: black;
+    }
+
+    .nuevaOrden-Ingresar-botones input[type="reset"]{
+        background-color: rgb(163, 49, 49);
+        color: white;
+    }
+
+    .nuevaOrden-Ingresar-botones input[type="submit"]:hover{
+        background-color: rgb(182, 199, 150);
+        color: rgb(255, 255, 255);
+    }
+
+    .nuevaOrden-Ingresar-botones input[type="reset"]:hover{
+        background-color: rgb(72, 64, 64);
+        color: white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* DISEÑO PAGINA DE TICKETS */
+    .consultar{
+        background-color: #000100;
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        margin-left: 5px;
+        border: 2px solid rgb(189, 151, 151);
+        border-radius: 5%;
+    }
+    .consultar:hover{
+        background-color: white;
+        color: black;
+        box-shadow: 3px 3px 12px linear-gradient();
+    }   
+    
+    h1{
+        text-align: center;
+        text-shadow: 10px,10px,10px,12px black;
+    }
+    h2{
+        text-align: center;
+    }
+    .tickets-table{
+        width: 95%;
+        border-collapse: collapse;
+        text-decoration: none;
+        border-color: #ffffff;
+        margin: 0 auto;
+        border-radius: 5px;
+        /* background-color: yellowgreen; */
+    }
+    .tickets-table-thead{
+        margin: 0;
+        background: #ffffff;
+        color: #000;
+        text-decoration: none;
+        padding: 10px;
+       
+        /* margin-left: 5px; */
+        /* border-radius: 5%; */
+        border: none;
+        border-bottom: 2px solid rgb(196, 191, 191);
+    }
+    .tickets-table-thead th{
+        font-size: 1.5vmax;
+        text-align: start;
+    }
+    .tickets-table-tr{
+        background-color: #fff;
+        
+    }
+    .tickets-table-td{
+        padding: 12px;
+        /* text-align: center; */
+        font-size: 1.1vmax;
+        
+    }
+    .tickets-table-td-a img{
+        /* text-align: center; */
+        max-width: 25px;
+        max-height: 25px;
+      
+    }
+
+    .tickets-table-td-a{
+        text-align: center;
+    }
+    .actualizar{
+        text-align: center;
+        text-decoration: none;
+    }
+
+
+    .tickets-table-tr:hover{
+        background-color: #ebecf0;
+        transition: .1s all;
+        
+    }
+
+    .btn-el{
+        border: none;
+        background-color: #ffffff;
+        border: 0px;
+        cursor: pointer;
+        margin-right: 13px;
+
+    }
+ 
+    
+    
+    .nueva-orden-total input{
+        width: 50%;
+    }

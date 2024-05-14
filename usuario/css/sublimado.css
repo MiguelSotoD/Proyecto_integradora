@@ -1,0 +1,395 @@
+
+/*Estilos para la seccion de la primera imagen*/
+#section-div-img {
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    transition: 0.5s;
+    /* background-color: #179c1e; */
+}
+
+#section-div-img:hover {
+    -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+}
+
+
+/*Estilos para el titulo de categoria*/
+#section-h1 {
+    font-size: 2rem;
+    padding: 3rem 3rem 3rem 3rem;
+    text-align: center;
+    background-color: rgba(237, 231, 224, 0.297);
+}
+
+/*Estilos para la seccion de las imagenes de presentacion*/
+#div-img {
+    padding: 4rem 2rem 4rem 2rem;
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*<li> de las imagenes*/
+.banners {
+    text-align: center;
+    padding: 5rem;
+    /* background-color: violet; */
+}
+
+.banners img {
+    width: 10rem;
+    height: 10rem;
+    transition: .3s;
+    -webkit-box-shadow: 0px 0px 44px -30px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 44px -30px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 44px -30px rgba(0, 0, 0, 0.75);
+    border-radius: 2rem;
+}
+
+.banners :hover {
+    width: 11rem;
+    height: 11rem;
+    transition: .3s;
+    transform: translateY(-5%);
+}
+
+.ligth-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    overflow-y: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.ligth-box img {
+    width: 30vw;
+    max-height: 50vh;
+    border-radius: 2rem;
+    scroll-margin-block: 0;  
+}
+
+.ligth-box:target {
+    transform: scale(1);
+    background-color: white;
+    /* background-:; */
+    
+}
+
+body.ligthbox-open {
+    overflow: hidden;
+}
+
+.close {
+    display: block;
+    position: relative;
+    bottom: 11rem;
+    left: 28rem;
+    background: #ffffff;
+    color: rgb(242, 11, 11);
+    font-size: 1.4rem;
+}
+
+/*Seccion del titulo donde incluye una imagen, titulo y texto*/
+#section-titulo {
+    /*   */
+    height: auto;
+    /* position: absolute; */
+    padding: 0rem;
+}
+
+#div-titulo {
+    padding: 3rem;
+    position: relative;
+}
+
+#section-titulo img {
+    display: flex;
+    float: left;
+    margin: 4rem;
+}
+
+#section-titulo h1 {
+    text-align: center;
+    font-size: 4vmax;
+}
+
+#section-titulo p {
+    text-align: justify;
+    padding: 0;
+}
+
+/* Parte responsivo de la pagina */
+
+/* Pantalla de escritorio EXTRA GRANDE EXTRA LARGE >=1200px */
+@media(min-width:1200px) {
+    #section-div-img img {
+        width: 80%;
+    }
+}
+
+/* Pantalla de escritorio  GRANDE  LARGE >=992px AND <=1199 */
+@media(min-width:992px) and (max-width:1199px) {
+    #section-div-img img {
+        width: 80%;
+    }
+
+    .close {
+        display: block;
+        position: relative;
+        bottom: 7rem;
+        left: 26rem;
+        background: #ffffff;
+        color: rgb(242, 11, 11);
+        font-size: 1rem;
+    }   
+
+    .ligth-box img {
+        width: 40vw;
+        max-height: 50vh;
+        border-radius: 2rem;
+        margin-top: 8rem; 
+    }
+    
+    .ligth-box:target {
+        transform: scale(1);
+    }
+}
+
+/* Pantalla de escritorio  MEDIANA  MEDIUM >=768px AND <=991  TABLET */
+@media(min-width:768px) and (max-width:991px) {
+    #section-div-img img {
+        width: 80%;
+    }
+
+    .banners img {
+        width: 20rem;
+        height: 20rem;
+        transition: .3s;
+        -webkit-box-shadow: 0px 0px 44px -30px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 44px -30px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 44px -30px rgba(0, 0, 0, 0.75);
+        border-radius: 2rem;
+    }
+
+    .banners :hover {
+        width: 21rem;
+        height: 21rem;
+        transition: .3s;
+        transform: translateY(-5%);
+    }
+
+    #section-titulo img {
+        display: flex;
+        float: left;
+        margin: 4rem;
+        margin-top: 15rem;
+    }
+
+    #section-titulo img {
+        display: flex;
+        float:none;
+        margin: 2rem;
+        width: 20rem;
+    }
+
+    #section-titulo img {
+        margin-right: auto;
+        margin-left: auto;
+        float:none;
+        right: 10rem;
+        width: 15rem;
+    }
+
+    .ligth-box img {
+        width: 60vw;
+        max-height: 50vh;
+        border-radius: 2rem;
+        margin-top: 8rem; 
+    }
+    
+    .ligth-box:target {
+        transform: scale(1);
+    }
+
+    .close {
+        display: block;
+        position: relative;
+        bottom: 7rem;
+        left: 28.4rem;
+        background: #ffffff;
+        color: rgb(242, 11, 11);
+        font-size: 1rem;
+    }   
+}
+
+/* Pantalla de escritorio  PEQUEÑA  SMALL >=576px AND <=767 CEL */
+@media(min-width:576px) and (max-width:767px) {
+    #section-div-img img {
+        width: 80%;
+    }
+
+    #section-h1 {
+        font-size: 20px;
+    }
+
+    .banners img {
+        width: 17rem;
+        height: 17rem;
+        transition: .3s;
+        -webkit-box-shadow: 0px 0px 44px -30px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 44px -30px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 44px -30px rgba(0, 0, 0, 0.75);
+        border-radius: 2rem;
+    }
+
+    .banners :hover {
+        width: 18rem;
+        height: 18rem;
+        transition: .3s;
+        transform: translateY(-5%);
+    }
+
+    #section-titulo img {
+        margin-right: auto;
+        margin-left: auto;
+        float:none;
+        right: 10rem;
+        width: 15rem;
+    }
+
+    .ligth-box img {
+        width: 60vw;
+        max-height: 50vh;
+        border-radius: 2rem;
+        margin-top: 10rem; 
+    }
+    
+    .ligth-box:target {
+        transform: scale(1);
+    }
+
+    .close {
+        display: block;
+        position: relative;
+        bottom: 5.5rem;
+        left: 22rem;
+        background: #ffffff;
+        color: rgb(242, 11, 11);
+        font-size: 1rem;
+    }   
+}
+
+/* Pantalla de escritorio  EXTRA PEQUEÑA  EXTRA SMALL <576px   CEL */
+@media(max-width:575px) {
+    #section-div-img img {
+        width: 80%;
+    }
+
+    #section-h1 {
+        font-size: 20px;
+    }
+    .section-img-presentation{
+        margin: 0;
+    }
+    .div-img{
+        margin: 0;
+    }
+.banners {
+    text-align: center;
+    padding: 4rem;
+}
+
+.banners img {
+    width: 10rem;
+    height: 10rem;
+    transition: .3s;
+    -webkit-box-shadow: 0px 0px 44px -30px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 44px -30px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 44px -30px rgba(0, 0, 0, 0.75);
+    border-radius: 2rem;
+}
+
+.banners :hover {
+    width: 11rem;
+    height: 11rem;
+    transition: .3s;
+    transform: translateY(-5%);
+}
+
+    #section-titulo img {   
+        float: none;
+        margin: 2rem;
+        width: 12rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .close {
+        display: block;
+        position: relative;
+        bottom: 2.5rem;
+        left: 18rem;
+        background: #ffffff;
+        color: rgb(242, 11, 11);
+        font-size: 1rem;
+    }   
+
+    .ligth-box img {
+        width: 60vw;
+        max-height: 50vh;
+        border-radius: 2rem;
+        margin-top: 10rem;
+    }
+    
+    .ligth-box:target {
+        transform: scale(1);
+    }
+}
+
+
+/* Boton whats  */
+.boton-flotante{
+	position: sticky;
+	float: right;
+	bottom: 20px;
+	right: 10px;
+   
+	 }
+ .whatsapp a{
+        display: block;
+        text-decoration: none;
+        background: #179c1e;
+        color: #fff;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+        transition: all 500ms ease;
+    }
+.whatsapp a:hover{
+    background: #fff;
+	color: #179c1e;
+}
+.whatsapp a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+.whatsapp a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}

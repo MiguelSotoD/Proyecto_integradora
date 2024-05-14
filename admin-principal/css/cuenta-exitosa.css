@@ -1,0 +1,30 @@
+.seccion1{
+    height: 600px;
+    text-align: center;
+
+}
+
+.seccion1 h1{
+    text-align: center;
+    line-height: 500px;
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem ;
+    color: rgb(14, 0, 138);
+}
+
+.seccion1 a{
+    float: right;
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: #000000;
+    color: #fff;
+    border: 1px solid #9a9393;
+    border-radius: 4px;
+}
+.seccion1 a:hover{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

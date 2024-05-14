@@ -1,0 +1,58 @@
+.seccion1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.seccion1 p{
+    padding-top: 15px;
+    font-size: 1.8rem;
+}
+.seccion1 h1{
+    font-size: 4vmax;
+    color: rgb(14, 0, 138);
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    font-family: 'Inter', sans-serif;
+}
+.article1 img{
+    width: 50%;
+    height: 20rem;
+    cursor: pointer;
+}
+.article2 img{
+    width: 50%;
+    height: 20rem;  
+    cursor: pointer;
+}
+
+.imagen{
+	transition: transform 0.5s; 
+}
+.imagen:hover{
+	transform: scale(1.02); 
+}
+
+/* Pantalla de escritorio  PEQUEÑA  SMALL >=576px AND <=767 CEL */
+@media(min-width:576px) and (max-width:767px)
+{
+    .article1 img{
+        width: 30%;
+        height: 12rem;
+    }
+    .article2 img{
+        width: 30%;
+        height: 12rem;  
+    }
+}
+/* Pantalla de escritorio  EXTRA PEQUEÑA  EXTRA SMALL <576px   CEL */
+@media(max-width:575px)
+{
+    .article1 img{
+        width: 30%;
+        height: 12rem;
+    }
+    .article2 img{
+        width: 30%;
+        height: 12rem;  
+    }
+}

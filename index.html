@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El profe</title>
+    <link rel="icon" href="usuario/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="usuario/css/style.css">
+    <link rel="stylesheet" href="usuario/css/index.css">
+    <link rel="stylesheet" href="usuario/css/fontello.css">
+    <link rel="stylesheet" href="usuario/css/burbujas.css">
+
+    <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css"> 
+
+</head>
+<body>
+
+    <header class="header-style">
+
+        <input type="checkbox" id="btn-menu">
+
+        <label for="btn-menu"><img src="usuario/img/menu-despegar.png" alt="menu" >
+        </label>
+
+        <a href="#" class="header-logo"> <img src="admin-principal/img/2.png"></a>
+
+        <nav class="navegacion">
+            <ul class="menu">
+                <li>
+                    <a href="#">INICIO</a>
+                </li>                
+                <li>
+                    <a href="usuario/html/nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="usuario/html/servicios.html">SERVICIOS</a>
+                    <ul class="submenu">
+                        <li><a href="usuario/html/encuadernado.html">Encuadernado</a></li>
+                        <li><a href="usuario/html/serigrafia.html">Serigrafia</a></li>
+                        <li><a href="usuario/html/sublimado.html">Sublimado</a></li>
+                        <li><a href="usuario/html/impresiones.html">Impresiones</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="admin-principal/index.php" class="admin">ACCEDER</a>
+                </li>
+            </ul>
+            <ion-icon name="header-icon"></ion-icon>
+        </nav>
+    </header>
+
+        <!-- Parte Principal de Diseño -->
+ 
+        <div class="index-slider">
+            <ul>
+                <li>
+        <img  src="usuario/img/index-imagen10.png" alt="">
+        </li>
+                <li>
+        <img src="usuario/img/index-imagen-c1.jpeg"  alt="">
+        </li>
+                <li>
+        <img src="usuario/img/index-imprenta-c2.jpg" alt="">
+        </li>
+                <li>
+        <img src="usuario/img/index-imprenta-c3.jpg" alt="">
+        </li>
+            </ul>
+        </div>
+
+
+<section class="index-contenedor">
+        <ul> 
+            <li class="index-contenedor-card">
+               <a href="usuario/html/encuadernado.html"> <img src="usuario/img/index-imagen7.jpg" alt="Imagen No disponible"></a>
+                <div class="index-contenedor-card-intro">
+                        <h1>Encuadernado</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Consequuntur amet cum magnam quis nesciunt, velit adipiscin.</p>
+                    </div>
+            </li>
+            <li class="index-contenedor-card">
+               <a href="usuario/html/serigrafia.html"> <img src="usuario/img/index-serigrafia.jpg" alt="Imagen No disponible"></a>
+                <div class="index-contenedor-card-intro">
+                        <h1>Serigrafia</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Consequuntur amet cum magnam quis nesciunt, velit adipiscin.</p>
+                </div>
+            </li>
+            <li class="index-contenedor-card">
+                    <a href="usuario/html/sublimado.html"><img src="usuario/img/index-sublimado.jpg" alt="Imagen No disponible"></a>
+                    <div class="index-contenedor-card-intro">
+                        <h1>Sublimado</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Consequuntur amet cum magnam quis nesciunt, velit adipiscin.</p>
+                    </div>
+                </li>
+                <li class="index-contenedor-card">
+                    <a href="usuario/html/impresiones.html"><img src="usuario/img/index-impresiones.jpg" alt="Imagen No disponible"></a>
+                    <div class="index-contenedor-card-intro">
+                        <h1>Impresiones</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Consequuntur amet cum magnam quis nesciunt, velit adipiscin.</p>
+                    </div>
+                </li>
+        </section>
+
+        <section class="index-contenedor2">
+            <img src="usuario/img/index-profw.jpeg" alt="" srcset="">
+            <div class="index-contenedor2-contenido">
+              <ul>
+                <li>
+                    <h2>Sobre la Empresa</h2>
+                  <p>“EL PROFE” es una empresa ubicada en la Zona centro del estado de Durango, en México. Se dedica a brindar servicios de impresión a través de distintas técnicas, las impresiones pueden ser en distintos objetos.
+                    Además de los servicios de impresión, ofrece encuadernación, engargolados, entre otros.</p>
+                </li>
+              </ul>
+            </div>
+        </section>
+
+        <section class="index-mapa">
+            <h1>Encuéntranos</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d911.0170858909694!2d-104.66789713039616!3d24.0286549986551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bc823a02f5ded%3A0xd1c3d65d7c33e3ff!2sEl%20Profe!5e0!3m2!1ses-419!2smx!4v1687662173415!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <!-- Boton flotante whatsapp -->
+       
+        <div class="callbutton">
+            <div id="WAButton"></div>
+        </div>
+
+
+        <!-- footer de la pagina -->
+        <footer class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 footer">
+
+            <a href="#"><img src="admin-principal/img/2.png" width="100px" height="100px" alt="No se encontro la imagen"></a>
+        
+            <div class="div-infofinal">
+                <div class="div-infofinal1">
+                <ul>
+                    <li class="azul">
+                        <p>Acerca de Nosotros</p>
+                    </li>
+    
+                    <li>
+                       <a href="usuario/html/nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="usuario/html/nosotros.html">+52 6181225476</a>
+                     </li>
+                     <li>
+                        <a href="usuario/html/nosotros.html">Calle Coronado #203 Col Zona Centro Durango,Dgo,Mex.</a>
+                     </li>
+                </ul>
+            </div>
+    
+            <div class="div-infofinal1">
+    
+            
+                <ul>
+                    <li class="azul">
+                       <a href="usuario/html/servicios.html"><p>Servicios</p></a> 
+                    </li>
+                    <li>
+                     <a href="">Encuadernado</a>
+                    </li>
+    
+                    <li>
+                      <a href="">Serigrafia</a>
+                    </li>
+    
+                    <li>
+                       <a href="">Sublimado</a>
+                    </li>
+    
+                    <li>
+                      <a href=""> Impresiones</a>
+                    </li>
+    
+                </ul>
+            </div>
+    
+            <div class="div-infofinal1">
+                <ul>
+                    <li class="azul">
+                       <p>Información Legal</p>
+                    </li>
+    
+                   
+                    <li>
+                        <a href="">Politicas de privacidad</a>
+                    </li>
+                    <li>
+                        <a href="">Informacion legal</a>
+                    </li>
+                </ul>
+            </div>
+    
+
+        
+    </footer>
+
+    <section class="section-footer-links">
+        <div class="section-div-redes-links col-12">
+            <a href="https://www.facebook.com/"><img src="usuario/img/facebook.png"></a>
+            <a href=""><img src="usuario/img/gmail.png"></a>
+            <a href=""><img src="usuario/img/instagram.png" ></a>
+        </div>
+
+    </section>
+</body>
+</html>
+
+
+<!-- Codigo para la fuente de la burbuja de phone -->
+<script src="https://kit.fontawesome.com/ab4fa16bfb.js" crossorigin="anonymous"></script>
+<!-- Codigo para que funcione la burbuja de Whatsapp -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+<script src="usuario/js/burbujas.js"></script>

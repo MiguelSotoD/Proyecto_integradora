@@ -1,0 +1,151 @@
+.seccion1{
+  text-align: center;
+}
+
+.seccion1 p{
+  padding-top: 15px;
+  font-size: 1.8rem;
+}
+.seccion1 h1{
+  font-size: 5vmax;
+  color: rgb(14, 0, 138);
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.caja {
+    margin-top: 5px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  .article1 img{
+    width: 50%;
+    height: 12rem;
+    cursor: pointer;
+}
+.article2 img{
+    width: 50%;
+    height: 12rem;  
+    cursor: pointer;
+}
+.imagen{
+	transition: transform 0.5s; 
+}
+.imagen:hover{
+	transform: scale(1.02); 
+}
+
+
+/* Pantalla de escritorio  PEQUEÑA  SMALL >=576px AND <=767 CEL */
+@media(min-width:576px) and (max-width:767px)
+{
+    .article1 img{
+        width: 30%;
+        height: 12rem;
+    }
+    .article2 img{
+        width: 30%;
+        height: 12rem;  
+    }
+}
+/* Pantalla de escritorio  EXTRA PEQUEÑA  EXTRA SMALL <576px   CEL */
+@media(max-width:575px)
+{
+    .article1 img{
+        width: 30%;
+        height: 12rem;
+    }
+    .article2 img{
+        width: 30%;
+        height: 12rem;  
+    }
+}
+
+
+  .caja-grande {
+    height: 400px;
+    width: 100%; /* Cambiado a 100vw para ocupar todo el ancho de la ventana */
+    /* background-color: rgb(214, 159, 184); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden; /* Añadido para contener las cajas dentro de la caja-grande */
+    margin-bottom: 30px;
+  }
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cuadro {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 10% ;
+    border: 2px solid gray;
+    box-shadow: 10px 10px 1px 1px black;
+    position: relative;
+    Background-color: #fff;
+  }
+  .cuadro .orden{
+    background-image: url(../img/gmail.png);
+  }
+  .cuadro a{
+    font-size: 2vmax;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+  }
+ 
+  
+  .cuadro::before {
+    content: '';
+    position: absolute;
+    left: 5px; /* Separación del borde izquierdo */
+    top: 10px; /* Separación desde la parte superior */
+    height: 80%; /* Altura de la línea */
+    width: 3px;
+    background-color: red;
+  }
+  
+
+/* Estilos para hacer el sitio web responsive */
+@media(max-width:575px)
+{
+     .col-12{width: 100%;}
+     .col-11{width: 91.666666%;}
+     .col-10{width: 83.333333%;}
+     .col-9{width: 75%;}
+     .col-8{width: 66.666666%;}
+     .col-7{width: 58.333333%;}
+     .col-6{width: 50%;}
+     .col-5{width: 41.666666%;}
+     .col-4{width: 33.333333%;}
+     .col-3{width: 25%;}
+     .col-2{width: 16.666666%;}
+     .col-1{width: 8.333333%;}
+     .col-0{display: none;}
+    
+      .caja-grande {
+        padding: 0px;
+        margin-bottom: 10px;
+      }
+      .cuadro {
+        height: 250px;
+        width: 250px;
+        padding: 20px;
+        margin: 3% ;
+      }
+     
+}

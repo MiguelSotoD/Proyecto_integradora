@@ -1,0 +1,11 @@
+/* Estilos aplicados a las burbujas del pie de pagina */
+
+
+/* Estilos aplicado a las burbujas flotantes */
+
+#WAButton {
+    border-radius: 50% !important;
+    margin-right: 0.2rem;
+    bottom: 80px;
+    z-index: 999 !important;
+} 

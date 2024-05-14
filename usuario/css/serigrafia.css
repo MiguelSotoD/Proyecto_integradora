@@ -1,0 +1,472 @@
+/* Imagen de fondo con texto encima-- TITULO */
+.serigrafia-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/index-imagen1.jpg); /*Dar un fondo de imagen con una sombra obsura a la imagen*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    user-select: none;
+}
+.serigrafia-img h1{
+    color: white;
+    font-size: 4vmax;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.serigrafia-img p{
+    color: white;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Seccion de informacion de serigrafia */
+.serigrafia-section-info{
+    /* background-color: #b6dcb8; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items:flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1.5px dashed black;
+
+}
+.serigrafia-section-info-divimg img{
+    max-width: 80%;
+    max-height: 80%;
+    margin-left: 30px;
+}
+
+.serigrafia-section-info-texto{
+    position: absolute;
+    background-color: #fff;
+    width: 35rem;
+    /* text-align: justify; */
+    height: 350px;
+    right: 100px;
+    border: 1px solid black;
+    margin-top: 25px;
+    z-index: 20;
+    padding: 20px;
+    word-spacing: 5px;
+}
+.serigrafia-section-info-texto h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3vmax;
+   padding-bottom: 20px;
+}
+.serigrafia-section-info-texto p{
+    font-size: 1.4vmax;
+    line-height: 20px;
+}
+
+
+.serigrafia-section-info-color{
+    position: absolute;
+    right: 50px;
+    background-color: black;
+    width: 100px;
+    height: 400px;
+    /* position: absolute; */
+    z-index: 1;
+}
+
+
+
+
+
+/* Diseño cards  */
+.serigrafia-section2-container{
+    display: flex;
+    align-items: center;
+}
+.serigrafia-section2-container-card{
+    height: auto;
+    margin: 50px;
+    text-align: center;
+    
+    border-radius: 3px;
+    transition: 1s all;
+    user-select: none;
+}
+.serigrafia-section2-container-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px black;
+}
+
+.serigrafia-section2-container-texto{
+    opacity: 0;
+    z-index: 0;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.serigrafia-section2-container-card:hover{
+    .serigrafia-section2-container-texto{
+        opacity: 1;
+        z-index: 1;
+        animation: float 2s ease-out infinite;
+    }
+    .serigrafia-section2-container-card-img{
+        backdrop-filter: blur(10px);
+        animation: down 1s ease-out infinite;
+        
+    }
+}
+
+
+@keyframes down{
+    0%{
+        transform: translateY(20px);
+    }   
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(-99px);
+    }
+    50%{
+        transform: translatey(-100px)
+    }
+    100%{
+        transform: translateY(-100px);
+    }
+}
+
+
+
+
+/* Boton whats  */
+.boton-flotante{
+	position: sticky;
+	float: right;
+	bottom: 20px;
+	right: 10px;
+	 }
+ .whatsapp a{
+        display: block;
+        text-decoration: none;
+        background: #179c1e;
+        color: #fff;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+        transition: all 500ms ease;
+    }
+.whatsapp a:hover{
+    background: #fff;
+	color: #179c1e;
+}
+.whatsapp a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+.whatsapp a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+@media(min-width:1200px)
+{
+     .col-xl-12{width: 100%;}
+     .col-xl-11{width: 91.666666%;}
+     .col-xl-10{width: 83.333333%;}
+     .col-xl-9{width: 75%;}
+     .col-xl-8{width: 66.666666%;}
+     .col-xl-7{width: 58.333333%;}
+     .col-xl-6{width: 50%;}
+     .col-xl-5{width: 41.666666%;}
+     .col-xl-4{width: 33.333333%;}
+     .col-xl-3{width: 25%;}
+     .col-xl-2{width: 16.666666%;}
+     .col-xl-1{width: 8.333333%;}
+}
+/* Pantalla de escritorio  GRANDE  LARGE >=992px AND <=1199 */
+@media(min-width:992px) and (max-width:1199px)
+{
+    .serigrafia-img p{
+        width: 100%;
+    }
+
+     /* Seccion de informacion de serigrafia */
+.serigrafia-section-info{
+    /* background-color: #b6dcb8; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center; 
+}
+.serigrafia-section-info-divimg img{
+    max-width: 80%;
+    max-height: 80%;
+    margin-left: 0;
+}
+
+.serigrafia-section-info-texto{
+    position: relative;
+    /* background-color: #b22c2c; */
+    width:100%;
+    /* text-align: justify; */
+    height: 300px;
+    right: 0;
+    z-index: 0;
+    padding: 10px;
+}
+.serigrafia-section-info-texto p{
+   text-align: left;
+}
+
+
+.serigrafia-section-info-color{
+  display: none;
+}
+
+
+/* Diseño cards  */
+.serigrafia-section2-container{
+    display: block;
+    align-items: center;
+}
+.serigrafia-section2-container-card{
+    height: auto;
+    margin: 10px;
+}
+.serigrafia-section2-container-card img{
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px black;
+}
+.serigrafia-section2-container-texto{
+    border-radius: 10px;
+    width: 80%;
+    height: 8rem;
+    margin: 0 auto;
+}
+}
+/* Pantalla de escritorio  MEDIANA  MEDIUM >=768px AND <=991  TABLET */
+@media(min-width:768px) and (max-width:991px)
+{
+    .serigrafia-img p{
+        width: 100%;
+    }
+
+     /* Seccion de informacion de serigrafia */
+.serigrafia-section-info{
+    /* background-color: #b6dcb8; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center; 
+}
+.serigrafia-section-info-divimg img{
+    max-width: 80%;
+    max-height: 80%;
+    margin-left: 0;
+}
+
+.serigrafia-section-info-texto{
+    position: relative;
+    /* background-color: #b22c2c; */
+    width:100%;
+    /* text-align: justify; */
+    height: 300px;
+    right: 0;
+    z-index: 0;
+    padding: 10px;
+}
+.serigrafia-section-info-texto p{
+   text-align: left;
+}
+
+
+.serigrafia-section-info-color{
+  display: none;
+}
+
+
+/* Diseño cards  */
+.serigrafia-section2-container{
+    display: block;
+    align-items: center;
+}
+.serigrafia-section2-container-card{
+    height: auto;
+    margin: 10px;
+}
+.serigrafia-section2-container-card img{
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px black;
+}
+.serigrafia-section2-container-texto{
+    border-radius: 10px;
+    width: 85%;
+    height: 8rem;
+    margin: 0 auto;
+}
+}
+/* Pantalla de escritorio  PEQUEÑA  SMALL >=576px AND <=767 CEL */
+@media(min-width:576px) and (max-width:767px)
+{
+    .serigrafia-img p{
+        width: 100%;
+    }
+
+     /* Seccion de informacion de serigrafia */
+.serigrafia-section-info{
+    /* background-color: #b6dcb8; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center; 
+}
+.serigrafia-section-info-divimg img{
+    max-width: 80%;
+    max-height: 80%;
+    margin-left: 0;
+}
+
+.serigrafia-section-info-texto{
+    position: relative;
+    /* background-color: #b22c2c; */
+    width:100%;
+    /* text-align: justify; */
+    height: 300px;
+    right: 0;
+    z-index: 0;
+    padding: 10px;
+}
+.serigrafia-section-info-texto p{
+   text-align: left;
+}
+
+
+.serigrafia-section-info-color{
+  display: none;
+}
+
+
+/* Diseño cards  */
+.serigrafia-section2-container{
+    display: block;
+    align-items: center;
+}
+.serigrafia-section2-container-card{
+    height: auto;
+    margin: 10px;
+}
+.serigrafia-section2-container-card img{
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px black;
+}
+.serigrafia-section2-container-texto{
+    border-radius: 10px;
+    width: 85%;
+    height: 8rem;
+    margin: 0 auto;
+}
+}
+/* Pantalla de escritorio  EXTRA PEQUEÑA  EXTRA SMALL <576px   CEL */
+@media(max-width:575px)
+{
+
+    .serigrafia-img p{
+        width: 100%;
+    }
+
+     /* Seccion de informacion de serigrafia */
+.serigrafia-section-info{
+    /* background-color: #b6dcb8; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center; 
+}
+.serigrafia-section-info-divimg img{
+    max-width: 80%;
+    max-height: 80%;
+    margin-left: 0;
+}
+
+.serigrafia-section-info-texto{
+    position: relative;
+    /* background-color: #b22c2c; */
+    width:100%;
+    /* text-align: justify; */
+    height: 300px;
+    right: 0;
+    z-index: 0;
+    padding: 10px;
+}
+.serigrafia-section-info-texto p{
+   text-align: left;
+}
+
+
+.serigrafia-section-info-color{
+  display: none;
+}
+
+
+/* Diseño cards  */
+.serigrafia-section2-container{
+    display: block;
+    align-items: center;
+}
+.serigrafia-section2-container-card{
+    height: auto;
+    margin: 10px;
+}
+.serigrafia-section2-container-card img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px black;
+}
+
+.serigrafia-section2-container-texto{
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+}
